@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Password Generator</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+
+    <body>
+        <div class="title">
+            <h1>Password Generator</h1>
+        </div>
+        <div class="main">
+            <div class="keys">
+                <div class="nums">
+                    <h3>Type number of the password types</h3>
+                    <h6 class="keyInfo"></h6>
+                    <div class="inputs">
+                        <input id='numbers' type="text" placeholder="number"/>
+                        <input id='alphabets' type="text" placeholder="alphabet"/>
+                        <input id='specialChars' type="text" placeholder="special character"/>
+                    </div>
+                </div>
+                <div class="types">
+                    <h3>Type sort of the special characters</h3>
+                    <div class="inputs">
+                        <input id='specialCharsTypes' type="text" placeholder="!@#$%"/>
+                    </div>
+                    <input id='generate' type="button" value="Generate random password" onclick="generate();"/>
+                </div>
+            </div>
+            <div class="values">
+                <h3 class="valueTitle"></h3>
+                <h6 class="valueInfo"></h6>
+                <ul class="pwList"></ul>
+            </div>
+            <script src="pwGenerator.js"></script>
+        </div>
+    </body>
+</html>
